@@ -1,0 +1,308 @@
+{
+    "ignore": false,
+    "name": "Alias",
+    "lchild": {
+        "ignore": false,
+        "name": "Sort",
+        "lchild": {
+            "ignore": false,
+            "name": "AggregateHash",
+            "lchild": {
+                "ignore": false,
+                "name": "JoinHash",
+                "lchild": {
+                    "ignore": false,
+                    "name": "JoinHash",
+                    "lchild": {
+                        "ignore": false,
+                        "name": "Validate",
+                        "lchild": {
+                            "ignore": false,
+                            "name": "JoinHash",
+                            "lchild": {
+                                "ignore": false,
+                                "name": "GetTable",
+                                "lchild": null,
+                                "rchild": null,
+                                "nodeid": 32
+                            },
+                            "rchild": {
+                                "ignore": false,
+                                "name": "Union",
+                                "lchild": {
+                                    "ignore": false,
+                                    "name": "TableScan",
+                                    "lchild": {
+                                        "ignore": false,
+                                        "name": "Validate",
+                                        "lchild": {
+                                            "ignore": false,
+                                            "name": "TableScan",
+                                            "lchild": {
+                                                "ignore": false,
+                                                "name": "Union",
+                                                "lchild": {
+                                                    "ignore": false,
+                                                    "name": "Union",
+                                                    "lchild": {
+                                                        "ignore": false,
+                                                        "name": "Union",
+                                                        "lchild": {
+                                                            "ignore": false,
+                                                            "name": "Union",
+                                                            "lchild": {
+                                                                "ignore": false,
+                                                                "name": "Union",
+                                                                "lchild": {
+                                                                    "ignore": false,
+                                                                    "name": "Union",
+                                                                    "lchild": {
+                                                                        "ignore": false,
+                                                                        "name": "Union",
+                                                                        "lchild": {
+                                                                            "ignore": false,
+                                                                            "name": "TableScan",
+                                                                            "lchild": {
+                                                                                "ignore": false,
+                                                                                "name": "GetTable",
+                                                                                "lchild": null,
+                                                                                "rchild": null,
+                                                                                "nodeid": 31
+                                                                            },
+                                                                            "rchild": null,
+                                                                            "lcard": 20000000,
+                                                                            "columns": [
+                                                                                "p_size"
+                                                                            ],
+                                                                            "nodeid": 30
+                                                                        },
+                                                                        "rchild": {
+                                                                            "ignore": false,
+                                                                            "name": "TableScan",
+                                                                            "lchild": null,
+                                                                            "rchild": null,
+                                                                            "lcard": 20000000,
+                                                                            "columns": [
+                                                                                "p_size"
+                                                                            ],
+                                                                            "nodeid": 29
+                                                                        },
+                                                                        "lcard": 400905,
+                                                                        "rcard": 399972,
+                                                                        "nodeid": 28
+                                                                    },
+                                                                    "rchild": {
+                                                                        "ignore": false,
+                                                                        "name": "TableScan",
+                                                                        "lchild": null,
+                                                                        "rchild": null,
+                                                                        "lcard": 20000000,
+                                                                        "columns": [
+                                                                            "p_size"
+                                                                        ],
+                                                                        "nodeid": 27
+                                                                    },
+                                                                    "lcard": 800877,
+                                                                    "rcard": 400344,
+                                                                    "nodeid": 26
+                                                                },
+                                                                "rchild": {
+                                                                    "ignore": false,
+                                                                    "name": "TableScan",
+                                                                    "lchild": null,
+                                                                    "rchild": null,
+                                                                    "lcard": 20000000,
+                                                                    "columns": [
+                                                                        "p_size"
+                                                                    ],
+                                                                    "nodeid": 25
+                                                                },
+                                                                "lcard": 1201221,
+                                                                "rcard": 400977,
+                                                                "nodeid": 24
+                                                            },
+                                                            "rchild": {
+                                                                "ignore": false,
+                                                                "name": "TableScan",
+                                                                "lchild": null,
+                                                                "rchild": null,
+                                                                "lcard": 20000000,
+                                                                "columns": [
+                                                                    "p_size"
+                                                                ],
+                                                                "nodeid": 23
+                                                            },
+                                                            "lcard": 1602198,
+                                                            "rcard": 399060,
+                                                            "nodeid": 22
+                                                        },
+                                                        "rchild": {
+                                                            "ignore": false,
+                                                            "name": "TableScan",
+                                                            "lchild": null,
+                                                            "rchild": null,
+                                                            "lcard": 20000000,
+                                                            "columns": [
+                                                                "p_size"
+                                                            ],
+                                                            "nodeid": 21
+                                                        },
+                                                        "lcard": 2001258,
+                                                        "rcard": 400742,
+                                                        "nodeid": 20
+                                                    },
+                                                    "rchild": {
+                                                        "ignore": false,
+                                                        "name": "TableScan",
+                                                        "lchild": null,
+                                                        "rchild": null,
+                                                        "lcard": 20000000,
+                                                        "columns": [
+                                                            "p_size"
+                                                        ],
+                                                        "nodeid": 19
+                                                    },
+                                                    "lcard": 2402000,
+                                                    "rcard": 399526,
+                                                    "nodeid": 18
+                                                },
+                                                "rchild": {
+                                                    "ignore": false,
+                                                    "name": "TableScan",
+                                                    "lchild": null,
+                                                    "rchild": null,
+                                                    "lcard": 20000000,
+                                                    "columns": [
+                                                        "p_size"
+                                                    ],
+                                                    "nodeid": 17
+                                                },
+                                                "lcard": 2801526,
+                                                "rcard": 400145,
+                                                "nodeid": 16
+                                            },
+                                            "rchild": null,
+                                            "lcard": 3201671,
+                                            "columns": [
+                                                "p_brand"
+                                            ],
+                                            "nodeid": 15
+                                        },
+                                        "rchild": null,
+                                        "lcard": 384869,
+                                        "nodeid": 14
+                                    },
+                                    "rchild": null,
+                                    "lcard": 384869,
+                                    "columns": [
+                                        "p_type"
+                                    ],
+                                    "nodeid": 13
+                                },
+                                "rchild": {
+                                    "ignore": false,
+                                    "name": "TableScan",
+                                    "lchild": null,
+                                    "rchild": null,
+                                    "lcard": 384869,
+                                    "columns": [
+                                        "p_type"
+                                    ],
+                                    "nodeid": 12
+                                },
+                                "lcard": 22491,
+                                "rcard": 24413,
+                                "nodeid": 11
+                            },
+                            "lcard": 80000000,
+                            "rcard": 46904,
+                            "lcolumn": [
+                                "ps_partkey"
+                            ],
+                            "rcolumn": [
+                                "p_partkey"
+                            ],
+                            "nodeid": 10
+                        },
+                        "rchild": null,
+                        "lcard": 11265,
+                        "nodeid": 9
+                    },
+                    "rchild": {
+                        "ignore": false,
+                        "name": "Projection",
+                        "lchild": {
+                            "ignore": false,
+                            "name": "TableScan",
+                            "lchild": {
+                                "ignore": false,
+                                "name": "Validate",
+                                "lchild": {
+                                    "ignore": false,
+                                    "name": "GetTable",
+                                    "lchild": null,
+                                    "rchild": null,
+                                    "nodeid": 8
+                                },
+                                "rchild": null,
+                                "lcard": 1000000,
+                                "nodeid": 7
+                            },
+                            "rchild": null,
+                            "lcard": 1000000,
+                            "columns": [
+                                "s_comment"
+                            ],
+                            "nodeid": 6
+                        },
+                        "lcard": 100000,
+                        "forward": [
+                            "s_suppkey"
+                        ],
+                        "noforward": [],
+                        "nodeid": 5
+                    },
+                    "lcard": 11265,
+                    "rcard": 100000,
+                    "lcolumn": [
+                        "ps_suppkey"
+                    ],
+                    "rcolumn": [
+                        "s_suppkey"
+                    ],
+                    "nodeid": 4
+                },
+                "rchild": null,
+                "lcard": 11265,
+                "rcard": 46904,
+                "lcolumn": [
+                    "ps_partkey"
+                ],
+                "rcolumn": [
+                    "p_partkey"
+                ],
+                "nodeid": 3
+            },
+            "lcard": 11265,
+            "grpby_nomod": [
+                "p_brand",
+                "p_type",
+                "p_size"
+            ],
+            "grpby_mod": [],
+            "grpby_expr": [],
+            "aggr_nomod": [
+                "ps_suppkey"
+            ],
+            "aggr_mod": [],
+            "aggr_expr": [],
+            "nodeid": 2
+        },
+        "lcard": 11265,
+        "col_mod": [],
+        "col_nomod": [],
+        "nodeid": 1
+    },
+    "lcard": 11265,
+    "nodeid": 0
+}

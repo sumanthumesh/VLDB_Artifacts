@@ -1,0 +1,120 @@
+{
+    "ignore": false,
+    "name": "AggregateHash",
+    "lchild": {
+        "ignore": false,
+        "name": "JoinHash",
+        "lchild": {
+            "ignore": false,
+            "name": "JoinHash",
+            "lchild": {
+                "ignore": false,
+                "name": "Validate",
+                "lchild": {
+                    "ignore": false,
+                    "name": "JoinHash",
+                    "lchild": {
+                        "ignore": false,
+                        "name": "JoinHash",
+                        "lchild": {
+                            "ignore": false,
+                            "name": "GetTable",
+                            "lchild": null,
+                            "rchild": null,
+                            "nodeid": 11
+                        },
+                        "rchild": {
+                            "ignore": false,
+                            "name": "Validate",
+                            "lchild": {
+                                "ignore": false,
+                                "name": "TableScan",
+                                "lchild": {
+                                    "ignore": false,
+                                    "name": "GetTable",
+                                    "lchild": null,
+                                    "rchild": null,
+                                    "nodeid": 10
+                                },
+                                "rchild": null,
+                                "lcard": 2963664,
+                                "columns": [
+                                    "pi_info"
+                                ],
+                                "nodeid": 9
+                            },
+                            "rchild": null,
+                            "lcard": 8,
+                            "nodeid": 8
+                        },
+                        "lcard": 36244344,
+                        "rcard": 8,
+                        "lcolumn": [
+                            "ci_person_id"
+                        ],
+                        "rcolumn": [
+                            "pi_person_id"
+                        ],
+                        "nodeid": 7
+                    },
+                    "rchild": {
+                        "ignore": false,
+                        "name": "Validate",
+                        "lchild": {
+                            "ignore": false,
+                            "name": "GetTable",
+                            "lchild": null,
+                            "rchild": null,
+                            "nodeid": 6
+                        },
+                        "rchild": null,
+                        "lcard": 361472,
+                        "nodeid": 5
+                    },
+                    "lcard": 1645,
+                    "rcard": 361472,
+                    "lcolumn": [
+                        "ci_movie_id"
+                    ],
+                    "rcolumn": [
+                        "at_movie_id"
+                    ],
+                    "nodeid": 4
+                },
+                "rchild": null,
+                "lcard": 87,
+                "nodeid": 3
+            },
+            "rchild": null,
+            "lcard": 87,
+            "rcard": 8,
+            "lcolumn": [
+                "ci_person_id"
+            ],
+            "rcolumn": [
+                "pi_person_id"
+            ],
+            "nodeid": 2
+        },
+        "rchild": null,
+        "lcard": 87,
+        "rcard": 361472,
+        "lcolumn": [
+            "ci_movie_id"
+        ],
+        "rcolumn": [
+            "at_movie_id"
+        ],
+        "nodeid": 1
+    },
+    "lcard": 254,
+    "grpby_nomod": [],
+    "grpby_mod": [],
+    "grpby_expr": [],
+    "aggr_nomod": [
+        "at_production_year"
+    ],
+    "aggr_mod": [],
+    "aggr_expr": [],
+    "nodeid": 0
+}

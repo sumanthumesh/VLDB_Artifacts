@@ -1,0 +1,221 @@
+{
+    "ignore": false,
+    "name": "Projection",
+    "lchild": {
+        "ignore": false,
+        "name": "AggregateHash",
+        "lchild": {
+            "ignore": false,
+            "name": "JoinHash",
+            "lchild": {
+                "ignore": false,
+                "name": "Validate",
+                "lchild": {
+                    "ignore": false,
+                    "name": "GetTable",
+                    "lchild": null,
+                    "rchild": null,
+                    "nodeid": 21
+                },
+                "rchild": null,
+                "lcard": 2963664,
+                "nodeid": 20
+            },
+            "rchild": {
+                "ignore": false,
+                "name": "JoinHash",
+                "lchild": {
+                    "ignore": false,
+                    "name": "Validate",
+                    "lchild": {
+                        "ignore": false,
+                        "name": "JoinHash",
+                        "lchild": {
+                            "ignore": false,
+                            "name": "GetTable",
+                            "lchild": null,
+                            "rchild": null,
+                            "nodeid": 19
+                        },
+                        "rchild": {
+                            "ignore": false,
+                            "name": "JoinHash",
+                            "lchild": {
+                                "ignore": false,
+                                "name": "Validate",
+                                "lchild": {
+                                    "ignore": false,
+                                    "name": "TableScan",
+                                    "lchild": {
+                                        "ignore": false,
+                                        "name": "JoinHash",
+                                        "lchild": {
+                                            "ignore": false,
+                                            "name": "GetTable",
+                                            "lchild": null,
+                                            "rchild": null,
+                                            "nodeid": 18
+                                        },
+                                        "rchild": {
+                                            "ignore": false,
+                                            "name": "Validate",
+                                            "lchild": {
+                                                "ignore": false,
+                                                "name": "TableScan",
+                                                "lchild": {
+                                                    "ignore": false,
+                                                    "name": "GetTable",
+                                                    "lchild": null,
+                                                    "rchild": null,
+                                                    "nodeid": 17
+                                                },
+                                                "rchild": null,
+                                                "lcard": 3140339,
+                                                "columns": [
+                                                    "cn_name"
+                                                ],
+                                                "nodeid": 16
+                                            },
+                                            "rchild": null,
+                                            "lcard": 314033,
+                                            "nodeid": 15
+                                        },
+                                        "lcard": 36244344,
+                                        "rcard": 314033,
+                                        "lcolumn": [
+                                            "ci_id"
+                                        ],
+                                        "rcolumn": [
+                                            "cn_id"
+                                        ],
+                                        "nodeid": 14
+                                    },
+                                    "rchild": null,
+                                    "lcard": 314033,
+                                    "columns": [
+                                        "ci_note"
+                                    ],
+                                    "nodeid": 13
+                                },
+                                "rchild": null,
+                                "lcard": 31403,
+                                "nodeid": 12
+                            },
+                            "rchild": null,
+                            "lcard": 31403,
+                            "rcard": 314033,
+                            "lcolumn": [
+                                "ci_id"
+                            ],
+                            "rcolumn": [
+                                "cn_id"
+                            ],
+                            "nodeid": 11
+                        },
+                        "lcard": 4167491,
+                        "rcard": 31403,
+                        "lcolumn": [
+                            "n_id"
+                        ],
+                        "rcolumn": [
+                            "ci_id"
+                        ],
+                        "nodeid": 10
+                    },
+                    "rchild": null,
+                    "lcard": 31403,
+                    "nodeid": 9
+                },
+                "rchild": {
+                    "ignore": false,
+                    "name": "JoinHash",
+                    "lchild": {
+                        "ignore": false,
+                        "name": "Validate",
+                        "lchild": {
+                            "ignore": false,
+                            "name": "JoinHash",
+                            "lchild": {
+                                "ignore": false,
+                                "name": "TableScan",
+                                "lchild": {
+                                    "ignore": false,
+                                    "name": "GetTable",
+                                    "lchild": null,
+                                    "rchild": null,
+                                    "nodeid": 8
+                                },
+                                "rchild": null,
+                                "lcard": 14835720,
+                                "columns": [
+                                    "mi_note"
+                                ],
+                                "nodeid": 7
+                            },
+                            "rchild": null,
+                            "lcard": 1483572,
+                            "rcard": 31403,
+                            "lcolumn": [
+                                "mi_movie_id"
+                            ],
+                            "rcolumn": [
+                                "ci_movie_id"
+                            ],
+                            "nodeid": 6
+                        },
+                        "rchild": null,
+                        "lcard": 33036,
+                        "nodeid": 5
+                    },
+                    "rchild": null,
+                    "lcard": 33036,
+                    "rcard": 31403,
+                    "lcolumn": [
+                        "mi_movie_id"
+                    ],
+                    "rcolumn": [
+                        "ci_movie_id"
+                    ],
+                    "nodeid": 4
+                },
+                "lcard": 31403,
+                "rcard": 33036,
+                "lcolumn": [
+                    "n_id"
+                ],
+                "rcolumn": [
+                    "ci_id"
+                ],
+                "nodeid": 3
+            },
+            "lcard": 2963664,
+            "rcard": 33036,
+            "lcolumn": [
+                "pi_person_id"
+            ],
+            "rcolumn": [
+                "ci_person_id"
+            ],
+            "nodeid": 2
+        },
+        "lcard": 172562,
+        "grpby_nomod": [
+            "ci_person_role_id"
+        ],
+        "grpby_mod": [],
+        "grpby_expr": [],
+        "aggr_nomod": [
+            "n_name"
+        ],
+        "aggr_mod": [],
+        "aggr_expr": [],
+        "nodeid": 1
+    },
+    "lcard": 1,
+    "forward": [
+        "MAX(n_name)",
+        "ci_person_role_id"
+    ],
+    "noforward": [],
+    "nodeid": 0
+}
