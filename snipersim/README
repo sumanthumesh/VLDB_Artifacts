@@ -1,0 +1,12 @@
+Install Prerequisites
+* `sudo dpkg --add-architecture i386
+sudo apt-get install binutils build-essential curl git libboost-dev libbz2-dev libc6:i386 libncurses5:i386 libsqlite3-dev libstdc++6:i386 python2 wget zlib1g-dev`
+* `make -j`
+
+Command to launch
+* `/data1/sumanthu/snipersim/run-sniper -d <query name> --roi --no-cache-warming -n 32 -v -c cascadelake -g scheduler/type=static -g perf_model/dram/latency=<AMAT from CXLSIM> -- /<Path to hyrise>/build/hyriseConsole <Path to query>`
+
+To run snipersim remember to compile hyrise with the following command else it will not work
+* `cd hyrise/build`
+* `cd cmake -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_BUILD_TYPE=Release -DCMAKE_SNIPERSIM=ON -DCMAKE_SNIPERSIM_INCLUDE_DIR=<path to snipersim>/include`
+* `make -j`
