@@ -1,5 +1,5 @@
 To compile navigate to memory tools
-* `cd source/tools/Mmeory`
+* `cd source/tools/Memory`
 Compile
 * `make all TARGET=intel64`
 
