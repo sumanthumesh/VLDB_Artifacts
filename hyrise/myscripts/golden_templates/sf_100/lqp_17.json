@@ -1,0 +1,170 @@
+{
+    "ignore": false,
+    "name": "Alias",
+    "lchild": {
+        "ignore": false,
+        "name": "Projection",
+        "lchild": {
+            "ignore": false,
+            "name": "AggregateHash",
+            "lchild": {
+                "ignore": false,
+                "name": "JoinHash",
+                "lchild": {
+                    "ignore": false,
+                    "name": "JoinHash",
+                    "lchild": {
+                        "ignore": false,
+                        "name": "Validate",
+                        "lchild": {
+                            "ignore": false,
+                            "name": "JoinHash",
+                            "lchild": {
+                                "ignore": false,
+                                "name": "GetTable",
+                                "lchild": null,
+                                "rchild": null,
+                                "nodeid": 16
+                            },
+                            "rchild": {
+                                "ignore": false,
+                                "name": "Validate",
+                                "lchild": {
+                                    "ignore": false,
+                                    "name": "TableScan",
+                                    "lchild": {
+                                        "ignore": false,
+                                        "name": "TableScan",
+                                        "lchild": {
+                                            "ignore": false,
+                                            "name": "GetTable",
+                                            "lchild": null,
+                                            "rchild": null,
+                                            "nodeid": 15
+                                        },
+                                        "rchild": null,
+                                        "lcard": 20000000,
+                                        "columns": [
+                                            "p_container"
+                                        ],
+                                        "nodeid": 14
+                                    },
+                                    "rchild": null,
+                                    "lcard": 501233,
+                                    "columns": [
+                                        "p_brand"
+                                    ],
+                                    "nodeid": 13
+                                },
+                                "rchild": null,
+                                "lcard": 20045,
+                                "nodeid": 12
+                            },
+                            "lcard": 600037888,
+                            "rcard": 20045,
+                            "lcolumn": [
+                                "l_partkey"
+                            ],
+                            "rcolumn": [
+                                "p_partkey"
+                            ],
+                            "nodeid": 11
+                        },
+                        "rchild": null,
+                        "lcard": 601398,
+                        "nodeid": 10
+                    },
+                    "rchild": null,
+                    "lcard": 601398,
+                    "rcard": 20045,
+                    "lcolumn": [
+                        "l_partkey"
+                    ],
+                    "rcolumn": [
+                        "p_partkey"
+                    ],
+                    "nodeid": 9
+                },
+                "rchild": {
+                    "ignore": false,
+                    "name": "Projection",
+                    "lchild": {
+                        "ignore": false,
+                        "name": "AggregateHash",
+                        "lchild": {
+                            "ignore": false,
+                            "name": "Validate",
+                            "lchild": {
+                                "ignore": false,
+                                "name": "JoinHash",
+                                "lchild": {
+                                    "ignore": false,
+                                    "name": "GetTable",
+                                    "lchild": null,
+                                    "rchild": null,
+                                    "nodeid": 8
+                                },
+                                "rchild": null,
+                                "lcard": 600037888,
+                                "rcard": 20045,
+                                "lcolumn": [
+                                    "p_partkey"
+                                ],
+                                "rcolumn": [
+                                    "l_partkey"
+                                ],
+                                "nodeid": 7
+                            },
+                            "rchild": null,
+                            "lcard": 601398,
+                            "nodeid": 6
+                        },
+                        "lcard": 601398,
+                        "grpby_nomod": [
+                            "l_partkey"
+                        ],
+                        "grpby_mod": [],
+                        "grpby_expr": [],
+                        "aggr_nomod": [
+                            "l_quantity"
+                        ],
+                        "aggr_mod": [],
+                        "aggr_expr": [],
+                        "nodeid": 5
+                    },
+                    "lcard": 601398,
+                    "forward": [
+                        "l_partkey"
+                    ],
+                    "noforward": [],
+                    "nodeid": 4
+                },
+                "lcard": 601398,
+                "rcard": 601398,
+                "lcolumn": [
+                    "p_partkey",
+                    "l_quantity"
+                ],
+                "rcolumn": [],
+                "nodeid": 3
+            },
+            "lcard": 601398,
+            "grpby_nomod": [],
+            "grpby_mod": [],
+            "grpby_expr": [],
+            "aggr_nomod": [],
+            "aggr_mod": [],
+            "aggr_onlyin": [
+                "l_extendedprice"
+            ],
+            "aggr_expr": [],
+            "nodeid": 2
+        },
+        "lcard": 601398,
+        "forward": [],
+        "noforward": [],
+        "nodeid": 1
+    },
+    "lcard": 601398,
+    "nodeid": 0
+}

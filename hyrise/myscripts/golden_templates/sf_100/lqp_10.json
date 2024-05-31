@@ -1,0 +1,192 @@
+{
+    "ignore": false,
+    "name": "Alias",
+    "lchild": {
+        "ignore": false,
+        "name": "Projection",
+        "lchild": {
+            "ignore": false,
+            "name": "Sort",
+            "lchild": {
+                "ignore": false,
+                "name": "AggregateHash",
+                "lchild": {
+                    "ignore": false,
+                    "name": "Projection",
+                    "lchild": {
+                        "ignore": false,
+                        "name": "JoinHash",
+                        "lchild": {
+                            "ignore": false,
+                            "name": "JoinHash",
+                            "lchild": {
+                                "ignore": false,
+                                "name": "Validate",
+                                "lchild": {
+                                    "ignore": false,
+                                    "name": "TableScan",
+                                    "lchild": {
+                                        "ignore": false,
+                                        "name": "GetTable",
+                                        "lchild": null,
+                                        "rchild": null,
+                                        "nodeid": 17
+                                    },
+                                    "rchild": null,
+                                    "lcard": 150000000,
+                                    "columns": [
+                                        "o_orderdate"
+                                    ],
+                                    "nodeid": 16
+                                },
+                                "rchild": null,
+                                "lcard": 5981875,
+                                "nodeid": 15
+                            },
+                            "rchild": {
+                                "ignore": false,
+                                "name": "Validate",
+                                "lchild": {
+                                    "ignore": false,
+                                    "name": "TableScan",
+                                    "lchild": {
+                                        "ignore": false,
+                                        "name": "GetTable",
+                                        "lchild": null,
+                                        "rchild": null,
+                                        "nodeid": 14
+                                    },
+                                    "rchild": null,
+                                    "lcard": 600037888,
+                                    "columns": [
+                                        "l_returnflag"
+                                    ],
+                                    "nodeid": 13
+                                },
+                                "rchild": null,
+                                "lcard": 16777216,
+                                "nodeid": 12
+                            },
+                            "lcard": 5981875,
+                            "rcard": 16777216,
+                            "lcolumn": [
+                                "o_orderkey"
+                            ],
+                            "rcolumn": [
+                                "l_orderkey"
+                            ],
+                            "nodeid": 11
+                        },
+                        "rchild": {
+                            "ignore": false,
+                            "name": "JoinHash",
+                            "lchild": {
+                                "ignore": false,
+                                "name": "Validate",
+                                "lchild": {
+                                    "ignore": false,
+                                    "name": "GetTable",
+                                    "lchild": null,
+                                    "rchild": null,
+                                    "nodeid": 10
+                                },
+                                "rchild": null,
+                                "lcard": 15000000,
+                                "nodeid": 9
+                            },
+                            "rchild": {
+                                "ignore": false,
+                                "name": "Validate",
+                                "lchild": {
+                                    "ignore": false,
+                                    "name": "GetTable",
+                                    "lchild": null,
+                                    "rchild": null,
+                                    "nodeid": 8
+                                },
+                                "rchild": null,
+                                "lcard": 25,
+                                "nodeid": 7
+                            },
+                            "lcard": 15000000,
+                            "rcard": 25,
+                            "lcolumn": [
+                                "c_nationkey"
+                            ],
+                            "rcolumn": [
+                                "n_nationkey"
+                            ],
+                            "nodeid": 6
+                        },
+                        "lcard": 5981878,
+                        "rcard": 15000000,
+                        "lcolumn": [
+                            "o_custkey"
+                        ],
+                        "rcolumn": [
+                            "c_custkey"
+                        ],
+                        "nodeid": 5
+                    },
+                    "lcard": 5981878,
+                    "forward": [
+                        "c_custkey",
+                        "c_name",
+                        "c_acctbal",
+                        "c_phone",
+                        "n_name",
+                        "c_address",
+                        "c_comment"
+                    ],
+                    "noforward": [
+                        "l_extendedprice",
+                        "l_discount"
+                    ],
+                    "nodeid": 4
+                },
+                "lcard": 5981878,
+                "grpby_nomod": [
+                    "c_custkey"
+                ],
+                "grpby_mod": [],
+                "grpby_expr": [],
+                "aggr_onlyout":[
+                    "c_address",
+                    "n_name",
+                    "c_comment",
+                    "c_phone",
+                    "c_acctbal",
+                    "c_name"
+                ],
+                "aggr_nomod": [],
+                "aggr_mod": [],
+                "aggr_expr": [
+                    "SUM(l_extendedprice * (1 - l_discount))"
+                ],
+                "nodeid": 3
+            },
+            "lcard": 5981878,
+            "col_mod": [
+                "l_extendedprice",
+                "l_discount"
+            ],
+            "col_nomod": [],
+            "nodeid": 2
+        },
+        "lcard": 5981878,
+        "forward": [
+            "c_custkey",
+            "c_name",
+            "SUM(l_extendedprice * (1 - l_discount))",
+            "c_acctbal",
+            "n_name",
+            "c_address",
+            "c_phone",
+            "c_comment"
+        ],
+        "noforward": [],
+        "nodeid": 1
+    },
+    "lcard": 5981878,
+    "nodeid": 0
+}

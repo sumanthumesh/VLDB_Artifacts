@@ -1,0 +1,78 @@
+{
+    "ignore": false,
+    "name": "Alias",
+    "lchild": {
+        "ignore": false,
+        "name": "AggregateHash",
+        "lchild": {
+            "ignore": false,
+            "name": "Projection",
+            "lchild": {
+                "ignore": false,
+                "name": "Validate",
+                "lchild": {
+                    "ignore": false,
+                    "name": "TableScan",
+                    "lchild": {
+                        "ignore": false,
+                        "name": "TableScan",
+                        "lchild": {
+                            "ignore": false,
+                            "name": "TableScan",
+                            "lchild": {
+                                "ignore": false,
+                                "name": "GetTable",
+                                "lchild": null,
+                                "rchild": null,
+                                "nodeid": 7
+                            },
+                            "rchild": null,
+                            "lcard": 60175,
+                            "columns": [
+                                "l_shipdate"
+                            ],
+                            "nodeid": 6
+                        },
+                        "rchild": null,
+                        "lcard": 9484,
+                        "columns": [
+                            "l_discount"
+                        ],
+                        "nodeid": 5
+                    },
+                    "rchild": null,
+                    "lcard": 1728,
+                    "columns": [
+                        "l_quantity"
+                    ],
+                    "nodeid": 4
+                },
+                "rchild": null,
+                "lcard": 800,
+                "nodeid": 3
+            },
+            "lcard": 800,
+            "forward": [],
+            "noforward": [
+                "l_extendedprice",
+                "l_discount"
+            ],
+            "nodeid": 2
+        },
+        "lcard": 800,
+        "grpby_nomod": [],
+        "grpby_mod": [],
+        "grpby_expr": [],
+        "aggr_nomod": [],
+        "aggr_mod": [
+            "l_extendedprice",
+            "l_discount"
+        ],
+        "aggr_expr": [
+            "SUM(l_extendedprice * l_discount)"
+        ],
+        "nodeid": 1
+    },
+    "lcard": 1,
+    "nodeid": 0
+}

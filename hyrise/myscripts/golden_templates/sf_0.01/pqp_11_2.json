@@ -1,0 +1,28 @@
+{
+    "ignore": false,
+    "name": "Projection",
+    "nodeid": 0,
+    "forward": [],
+    "noforward": [],
+    "lcard": 1,
+    "lchild": {
+        "ignore": false,
+        "name": "AggregateHash",
+        "nodeid": 1,
+        "grpby_nomod": [],
+        "grpby_mod": [],
+        "aggr_nomod": [],
+        "aggr_mod": [],
+        "noforward": [],
+        "lcard": 400,
+        "lchild": {
+            "ignore": false,
+            "name": "Projection",
+            "nodeid": 2,
+            "lcard": 400,
+            "forward": [],
+            "noforward": ["ps_supplycost","ps_availqty"],
+            "lchild": null
+        }
+    }
+}

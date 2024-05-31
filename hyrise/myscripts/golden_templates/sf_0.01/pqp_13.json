@@ -1,0 +1,95 @@
+{
+    "ignore": false,
+    "name": "Alias",
+    "lchild": {
+        "ignore": false,
+        "name": "Sort",
+        "lchild": {
+            "ignore": false,
+            "name": "AggregateHash",
+            "lchild": {
+                "ignore": false,
+                "name": "AggregateHash",
+                "lchild": {
+                    "ignore": false,
+                    "name": "JoinHash",
+                    "lchild": {
+                        "ignore": false,
+                        "name": "Validate",
+                        "lchild": {
+                            "ignore": false,
+                            "name": "GetTable",
+                            "lchild": null,
+                            "rchild": null,
+                            "nodeid": 9
+                        },
+                        "rchild": null,
+                        "lcard": 1500,
+                        "nodeid": 8
+                    },
+                    "rchild": {
+                        "ignore": false,
+                        "name": "Validate",
+                        "lchild": {
+                            "ignore": false,
+                            "name": "TableScan",
+                            "lchild": {
+                                "ignore": false,
+                                "name": "GetTable",
+                                "lchild": null,
+                                "rchild": null,
+                                "nodeid": 7
+                            },
+                            "rchild": null,
+                            "lcard": 15000,
+                            "columns": [
+                                "o_comment"
+                            ],
+                            "nodeid": 6
+                        },
+                        "rchild": null,
+                        "lcard": 14834,
+                        "nodeid": 5
+                    },
+                    "lcard": 1500,
+                    "rcard": 14834,
+                    "lcolumn": [
+                        "c_custkey"
+                    ],
+                    "rcolumn": [
+                        "o_custkey"
+                    ],
+                    "nodeid": 4
+                },
+                "lcard": 15334,
+                "grpby_nomod": [
+                    "c_custkey"
+                ],
+                "grpby_mod": [],
+                "grpby_expr": [],
+                "aggr_nomod": [
+                    "o_orderkey"
+                ],
+                "aggr_mod": [],
+                "aggr_expr": [],
+                "nodeid": 3
+            },
+            "lcard": 1500,
+            "grpby_nomod": [],
+            "grpby_mod": [],
+            "grpby_expr": [],
+            "aggr_nomod": [],
+            "aggr_mod": [],
+            "aggr_expr": [
+                "COUNT(*)"
+            ],
+            "nodeid": 2
+        },
+        "lcard": 33,
+        "col_mod": [],
+        "col_nomod": [],
+        "nodeid": 1
+    },
+    "lcard": 33,
+    "nodeid": 0
+}

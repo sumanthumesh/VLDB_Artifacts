@@ -1,0 +1,16 @@
+c_custkey,30347389
+c_name,3884218
+c_address,3884218
+c_nationkey,15000000
+c_phone,3884218
+c_acctbal,3884218
+c_comment,3884218
+o_orderkey,5730378
+o_custkey,11463171
+o_orderdate,150000000
+l_orderkey,148067261
+l_extendedprice,11463171
+l_discount,11463171
+l_returnflag,600037902
+n_nationkey,25
+n_name,3884218

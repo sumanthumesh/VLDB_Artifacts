@@ -1,0 +1,13 @@
+n_name,9491836
+s_nationkey,1040000
+n_nationkey,8
+l_suppkey,602749813
+s_suppkey,80000
+c_nationkey,15599999
+o_custkey,159000123
+c_custkey,1199998
+l_orderkey,26713436
+o_orderkey,18000246
+l_shipdate,9678093
+l_extendedprice,677981
+l_discount,677981

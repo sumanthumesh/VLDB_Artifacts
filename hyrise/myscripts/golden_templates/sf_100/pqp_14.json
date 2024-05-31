@@ -1,0 +1,96 @@
+{
+    "ignore": false,
+    "name": "Alias",
+    "lchild": {
+        "ignore": false,
+        "name": "Projection",
+        "lchild": {
+            "ignore": false,
+            "name": "AggregateHash",
+            "lchild": {
+                "ignore": false,
+                "name": "Projection",
+                "lchild": {
+                    "ignore": false,
+                    "name": "JoinHash",
+                    "lchild": {
+                        "ignore": false,
+                        "name": "Validate",
+                        "lchild": {
+                            "ignore": false,
+                            "name": "TableScan",
+                            "lchild": {
+                                "ignore": false,
+                                "name": "GetTable",
+                                "lchild": null,
+                                "rchild": null,
+                                "nodeid": 9
+                            },
+                            "rchild": null,
+                            "lcard": 600037902,
+                            "columns": [
+                                "l_shipdate"
+                            ],
+                            "nodeid": 8
+                        },
+                        "rchild": null,
+                        "lcard": 7484260,
+                        "nodeid": 7
+                    },
+                    "rchild": {
+                        "ignore": false,
+                        "name": "Validate",
+                        "lchild": {
+                            "ignore": false,
+                            "name": "GetTable",
+                            "lchild": null,
+                            "rchild": null,
+                            "nodeid": 6
+                        },
+                        "rchild": null,
+                        "lcard": 20000000,
+                        "nodeid": 5
+                    },
+                    "lcard": 7484260,
+                    "rcard": 20000000,
+                    "lcolumn": [
+                        "l_partkey"
+                    ],
+                    "rcolumn": [
+                        "p_partkey"
+                    ],
+                    "nodeid": 4
+                },
+                "lcard": 7484260,
+                "forward": [],
+                "noforward": [
+                    "l_extendedprice",
+                    "l_discount",
+                    "p_type"
+                ],
+                "nodeid": 3
+            },
+            "lcard": 7484260,
+            "grpby_nomod": [],
+            "grpby_mod": [],
+            "grpby_expr": [],
+            "aggr_nomod": [],
+            "aggr_mod": [
+                "l_extendedprice",
+                "l_discount",
+                "p_type"
+            ],
+            "aggr_expr": [
+                "SUM(l_extendedprice * (1 - l_discount))",
+                "  SUM(CASE WHEN p_type LIKE 'PROMO%' THEN l_extendedprice * (1 - l_discount) ELSE 0 END)"
+            ],
+            "nodeid": 2
+        },
+        "lcard": 1,
+        "forward": [],
+        "noforward": [],
+        "nodeid": 1
+    },
+    "lcard": 1,
+    "nodeid": 0
+}

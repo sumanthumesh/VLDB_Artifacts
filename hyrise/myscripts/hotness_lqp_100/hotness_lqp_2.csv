@@ -1,0 +1,15 @@
+p_size,20000000
+p_type,399557
+p_partkey,160479466
+ps_partkey,439509
+r_name,10
+n_regionkey,50
+r_regionkey,2
+s_nationkey,2200000
+n_nationkey,15
+s_suppkey,479466
+ps_suppkey,600000
+ps_supplycost,319644
+s_acctbal,159822
+n_name,159822
+s_name,159822

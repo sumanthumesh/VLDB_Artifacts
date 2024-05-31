@@ -1,0 +1,185 @@
+{
+    "ignore": false,
+    "name": "Alias",
+    "lchild": {
+        "ignore": false,
+        "name": "Sort",
+        "lchild": {
+            "ignore": false,
+            "name": "AggregateHash",
+            "lchild": {
+                "ignore": false,
+                "name": "JoinHash",
+                "lchild": {
+                    "ignore": false,
+                    "name": "JoinHash",
+                    "lchild": {
+                        "ignore": false,
+                        "name": "Validate",
+                        "lchild": {
+                            "ignore": false,
+                            "name": "JoinHash",
+                            "lchild": {
+                                "ignore": false,
+                                "name": "GetTable",
+                                "lchild": null,
+                                "rchild": null,
+                                "nodeid": 18
+                            },
+                            "rchild": {
+                                "ignore": false,
+                                "name": "Union",
+                                "lchild": {
+                                    "ignore": false,
+                                    "name": "TableScan",
+                                    "lchild": {
+                                        "ignore": false,
+                                        "name": "Validate",
+                                        "lchild": {
+                                            "ignore": false,
+                                            "name": "TableScan",
+                                            "lchild": {
+                                                "ignore": false,
+                                                "name": "TableScan",
+                                                "lchild": {
+                                                    "ignore": false,
+                                                    "name": "GetTable",
+                                                    "lchild": null,
+                                                    "rchild": null,
+                                                    "nodeid": 17
+                                                },
+                                                "rchild": null,
+                                                "lcard": 2000,
+                                                "columns": [
+                                                    "p_size"
+                                                ],
+                                                "nodeid": 16
+                                            },
+                                            "rchild": null,
+                                            "lcard": 319,
+                                            "columns": [
+                                                "p_brand"
+                                            ],
+                                            "nodeid": 15
+                                        },
+                                        "rchild": null,
+                                        "lcard": 307,
+                                        "nodeid": 14
+                                    },
+                                    "rchild": null,
+                                    "lcard": 307,
+                                    "columns": [
+                                        "p_type"
+                                    ],
+                                    "nodeid": 13
+                                },
+                                "rchild": {
+                                    "ignore": false,
+                                    "name": "TableScan",
+                                    "lchild": null,
+                                    "rchild": null,
+                                    "lcard": 307,
+                                    "columns": [
+                                        "p_type"
+                                    ],
+                                    "nodeid": 12
+                                },
+                                "lcard": 150,
+                                "rcard": 149,
+                                "nodeid": 11
+                            },
+                            "lcard": 8000,
+                            "rcard": 299,
+                            "lcolumn": [
+                                "ps_partkey"
+                            ],
+                            "rcolumn": [
+                                "p_partkey"
+                            ],
+                            "nodeid": 10
+                        },
+                        "rchild": null,
+                        "lcard": 1196,
+                        "nodeid": 9
+                    },
+                    "rchild": {
+                        "ignore": false,
+                        "name": "Projection",
+                        "lchild": {
+                            "ignore": false,
+                            "name": "TableScan",
+                            "lchild": {
+                                "ignore": false,
+                                "name": "Validate",
+                                "lchild": {
+                                    "ignore": false,
+                                    "name": "GetTable",
+                                    "lchild": null,
+                                    "rchild": null,
+                                    "nodeid": 8
+                                },
+                                "rchild": null,
+                                "lcard": 100,
+                                "nodeid": 7
+                            },
+                            "rchild": null,
+                            "lcard": 100,
+                            "columns": [
+                                "s_comment"
+                            ],
+                            "nodeid": 6
+                        },
+                        "lcard": 0,
+                        "forward": [
+                            "s_suppkey"
+                        ],
+                        "noforward": [],
+                        "nodeid": 5
+                    },
+                    "lcard": 1196,
+                    "rcard": 0,
+                    "lcolumn": [
+                        "ps_suppkey"
+                    ],
+                    "rcolumn": [
+                        "s_suppkey"
+                    ],
+                    "nodeid": 4
+                },
+                "rchild": null,
+                "lcard": 1196,
+                "rcard": 299,
+                "lcolumn": [
+                    "ps_partkey"
+                ],
+                "rcolumn": [
+                    "p_partkey"
+                ],
+                "nodeid": 3
+            },
+            "lcard": 1196,
+            "grpby_nomod": [
+                "p_brand",
+                "p_type",
+                "p_size"
+            ],
+            "grpby_mod": [],
+            "grpby_expr": [],
+            "aggr_nomod": [
+                "ps_suppkey",
+                "s_suppkey"
+            ],
+            "aggr_mod": [],
+            "aggr_expr": [],
+            "nodeid": 2
+        },
+        "lcard": 296,
+        "col_mod": [],
+        "col_nomod": [
+            "s_suppkey"
+        ],
+        "nodeid": 1
+    },
+    "lcard": 296,
+    "nodeid": 0
+}

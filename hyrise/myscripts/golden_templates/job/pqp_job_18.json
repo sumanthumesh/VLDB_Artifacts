@@ -1,0 +1,269 @@
+{
+    "ignore": false,
+    "name": "Alias",
+    "lchild": {
+        "ignore": false,
+        "name": "AggregateHash",
+        "lchild": {
+            "ignore": false,
+            "name": "TableScan",
+            "lchild": {
+                "ignore": false,
+                "name": "JoinHash",
+                "lchild": {
+                    "ignore": false,
+                    "name": "Validate",
+                    "lchild": {
+                        "ignore": false,
+                        "name": "JoinHash",
+                        "lchild": {
+                            "ignore": false,
+                            "name": "GetTable",
+                            "lchild": null,
+                            "rchild": null,
+                            "nodeid": 26
+                        },
+                        "rchild": {
+                            "ignore": false,
+                            "name": "JoinHash",
+                            "lchild": {
+                                "ignore": false,
+                                "name": "JoinHash",
+                                "lchild": {
+                                    "ignore": false,
+                                    "name": "Union",
+                                    "lchild": {
+                                        "ignore": false,
+                                        "name": "TableScan",
+                                        "lchild": {
+                                            "ignore": false,
+                                            "name": "Validate",
+                                            "lchild": {
+                                                "ignore": false,
+                                                "name": "TableScan",
+                                                "lchild": {
+                                                    "ignore": false,
+                                                    "name": "JoinHash",
+                                                    "lchild": {
+                                                        "ignore": false,
+                                                        "name": "JoinHash",
+                                                        "lchild": {
+                                                            "ignore": false,
+                                                            "name": "GetTable",
+                                                            "lchild": null,
+                                                            "rchild": null,
+                                                            "nodeid": 25
+                                                        },
+                                                        "rchild": {
+                                                            "ignore": false,
+                                                            "name": "JoinHash",
+                                                            "lchild": {
+                                                                "ignore": false,
+                                                                "name": "Validate",
+                                                                "lchild": {
+                                                                    "ignore": false,
+                                                                    "name": "JoinHash",
+                                                                    "lchild": {
+                                                                        "ignore": false,
+                                                                        "name": "GetTable",
+                                                                        "lchild": null,
+                                                                        "rchild": null,
+                                                                        "nodeid": 24
+                                                                    },
+                                                                    "rchild": {
+                                                                        "ignore": false,
+                                                                        "name": "Validate",
+                                                                        "lchild": {
+                                                                            "ignore": false,
+                                                                            "name": "TableScan",
+                                                                            "lchild": {
+                                                                                "ignore": false,
+                                                                                "name": "GetTable",
+                                                                                "lchild": null,
+                                                                                "rchild": null,
+                                                                                "nodeid": 23
+                                                                            },
+                                                                            "rchild": null,
+                                                                            "lcard": 113,
+                                                                            "columns": [
+                                                                                "it_info"
+                                                                            ],
+                                                                            "nodeid": 22
+                                                                        },
+                                                                        "rchild": null,
+                                                                        "lcard": 1,
+                                                                        "nodeid": 21
+                                                                    },
+                                                                    "lcard": 1380035,
+                                                                    "rcard": 1,
+                                                                    "lcolumn": [
+                                                                        "mii_info_type_id"
+                                                                    ],
+                                                                    "rcolumn": [
+                                                                        "it_id"
+                                                                    ],
+                                                                    "nodeid": 20
+                                                                },
+                                                                "rchild": null,
+                                                                "lcard": 250,
+                                                                "nodeid": 19
+                                                            },
+                                                            "rchild": null,
+                                                            "lcard": 250,
+                                                            "rcard": 1,
+                                                            "lcolumn": [
+                                                                "mii_info_type_id"
+                                                            ],
+                                                            "rcolumn": [
+                                                                "it_id"
+                                                            ],
+                                                            "nodeid": 18
+                                                        },
+                                                        "lcard": 2609129,
+                                                        "rcard": 250,
+                                                        "lcolumn": [
+                                                            "mc_movie_id"
+                                                        ],
+                                                        "rcolumn": [
+                                                            "mii_movie_id"
+                                                        ],
+                                                        "nodeid": 17
+                                                    },
+                                                    "rchild": {
+                                                        "ignore": false,
+                                                        "name": "Validate",
+                                                        "lchild": {
+                                                            "ignore": false,
+                                                            "name": "TableScan",
+                                                            "lchild": {
+                                                                "ignore": false,
+                                                                "name": "GetTable",
+                                                                "lchild": null,
+                                                                "rchild": null,
+                                                                "nodeid": 16
+                                                            },
+                                                            "rchild": null,
+                                                            "lcard": 4,
+                                                            "columns": [
+                                                                "ct_kind"
+                                                            ],
+                                                            "nodeid": 15
+                                                        },
+                                                        "rchild": null,
+                                                        "lcard": 1,
+                                                        "nodeid": 14
+                                                    },
+                                                    "lcard": 8309,
+                                                    "rcard": 1,
+                                                    "lcolumn": [
+                                                        "mc_company_type_id"
+                                                    ],
+                                                    "rcolumn": [
+                                                        "ct_id"
+                                                    ],
+                                                    "nodeid": 13
+                                                },
+                                                "rchild": null,
+                                                "lcard": 715,
+                                                "columns": [
+                                                    "mc_note"
+                                                ],
+                                                "nodeid": 12
+                                            },
+                                            "rchild": null,
+                                            "lcard": 714,
+                                            "nodeid": 11
+                                        },
+                                        "rchild": null,
+                                        "lcard": 714,
+                                        "columns": [
+                                            "mc_note"
+                                        ],
+                                        "nodeid": 10
+                                    },
+                                    "rchild": {
+                                        "ignore": false,
+                                        "name": "TableScan",
+                                        "lchild": null,
+                                        "rchild": null,
+                                        "lcard": 714,
+                                        "columns": [
+                                            "mc_note"
+                                        ],
+                                        "nodeid": 9
+                                    },
+                                    "lcard": 23,
+                                    "rcard": 119,
+                                    "nodeid": 8
+                                },
+                                "rchild": null,
+                                "lcard": 142,
+                                "rcard": 250,
+                                "lcolumn": [
+                                    "mc_movie_id"
+                                ],
+                                "rcolumn": [
+                                    "mii_movie_id"
+                                ],
+                                "nodeid": 7
+                            },
+                            "rchild": null,
+                            "lcard": 142,
+                            "rcard": 1,
+                            "lcolumn": [
+                                "mc_company_type_id"
+                            ],
+                            "rcolumn": [
+                                "ct_id"
+                            ],
+                            "nodeid": 6
+                        },
+                        "lcard": 2528312,
+                        "rcard": 142,
+                        "lcolumn": [
+                            "t_id"
+                        ],
+                        "rcolumn": [
+                            "mc_movie_id"
+                        ],
+                        "nodeid": 5
+                    },
+                    "rchild": null,
+                    "lcard": 105,
+                    "nodeid": 4
+                },
+                "rchild": null,
+                "lcard": 105,
+                "rcard": 142,
+                "lcolumn": [
+                    "t_id"
+                ],
+                "rcolumn": [
+                    "mc_movie_id"
+                ],
+                "nodeid": 3
+            },
+            "rchild": null,
+            "lcard": 142,
+            "columns": [
+                "mii_movie_id",
+                "t_id"
+            ],
+            "nodeid": 2
+        },
+        "lcard": 142,
+        "grpby_nomod": [],
+        "grpby_mod": [],
+        "grpby_expr": [],
+        "aggr_nomod": [
+            "mc_note",
+            "t_title",
+            "t_production_year"
+        ],
+        "aggr_mod": [],
+        "aggr_expr": [],
+        "nodeid": 1
+    },
+    "lcard": 1,
+    "nodeid": 0
+}

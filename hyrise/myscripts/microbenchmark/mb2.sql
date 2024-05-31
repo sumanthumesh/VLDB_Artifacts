@@ -1,0 +1,1 @@
+select max(l_shipdate),sum(l_tax) from lineitem

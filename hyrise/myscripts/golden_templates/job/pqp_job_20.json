@@ -1,0 +1,318 @@
+{
+    "ignore": false,
+    "name": "AggregateHash",
+    "lchild": {
+        "ignore": false,
+        "name": "TableScan",
+        "lchild": {
+            "ignore": false,
+            "name": "JoinHash",
+            "lchild": {
+                "ignore": false,
+                "name": "Validate",
+                "lchild": {
+                    "ignore": false,
+                    "name": "TableScan",
+                    "lchild": {
+                        "ignore": false,
+                        "name": "JoinHash",
+                        "lchild": {
+                            "ignore": false,
+                            "name": "GetTable",
+                            "lchild": null,
+                            "rchild": null,
+                            "nodeid": 32
+                        },
+                        "rchild": {
+                            "ignore": false,
+                            "name": "Validate",
+                            "lchild": {
+                                "ignore": false,
+                                "name": "Union",
+                                "lchild": {
+                                    "ignore": false,
+                                    "name": "Union",
+                                    "lchild": {
+                                        "ignore": false,
+                                        "name": "Union",
+                                        "lchild": {
+                                            "ignore": false,
+                                            "name": "Union",
+                                            "lchild": {
+                                                "ignore": false,
+                                                "name": "Union",
+                                                "lchild": {
+                                                    "ignore": false,
+                                                    "name": "Union",
+                                                    "lchild": {
+                                                        "ignore": false,
+                                                        "name": "Union",
+                                                        "lchild": {
+                                                            "ignore": false,
+                                                            "name": "TableScan",
+                                                            "lchild": {
+                                                                "ignore": false,
+                                                                "name": "GetTable",
+                                                                "lchild": null,
+                                                                "rchild": null,
+                                                                "nodeid": 31
+                                                            },
+                                                            "rchild": null,
+                                                            "lcard": 14835720,
+                                                            "columns": [
+                                                                "mi_info"
+                                                            ],
+                                                            "nodeid": 30
+                                                        },
+                                                        "rchild": {
+                                                            "ignore": false,
+                                                            "name": "TableScan",
+                                                            "lchild": null,
+                                                            "rchild": null,
+                                                            "lcard": 14835720,
+                                                            "columns": [
+                                                                "mi_info"
+                                                            ],
+                                                            "nodeid": 29
+                                                        },
+                                                        "lcard": 65767,
+                                                        "rcard": 3164,
+                                                        "nodeid": 28
+                                                    },
+                                                    "rchild": {
+                                                        "ignore": false,
+                                                        "name": "TableScan",
+                                                        "lchild": null,
+                                                        "rchild": null,
+                                                        "lcard": 14835720,
+                                                        "columns": [
+                                                            "mi_info"
+                                                        ],
+                                                        "nodeid": 27
+                                                    },
+                                                    "lcard": 68931,
+                                                    "rcard": 0,
+                                                    "nodeid": 26
+                                                },
+                                                "rchild": {
+                                                    "ignore": false,
+                                                    "name": "TableScan",
+                                                    "lchild": null,
+                                                    "rchild": null,
+                                                    "lcard": 14835720,
+                                                    "columns": [
+                                                        "mi_info"
+                                                    ],
+                                                    "nodeid": 25
+                                                },
+                                                "lcard": 68931,
+                                                "rcard": 7817,
+                                                "nodeid": 24
+                                            },
+                                            "rchild": {
+                                                "ignore": false,
+                                                "name": "TableScan",
+                                                "lchild": null,
+                                                "rchild": null,
+                                                "lcard": 14835720,
+                                                "columns": [
+                                                    "mi_info"
+                                                ],
+                                                "nodeid": 23
+                                            },
+                                            "lcard": 76748,
+                                            "rcard": 12445,
+                                            "nodeid": 22
+                                        },
+                                        "rchild": {
+                                            "ignore": false,
+                                            "name": "TableScan",
+                                            "lchild": null,
+                                            "rchild": null,
+                                            "lcard": 14835720,
+                                            "columns": [
+                                                "mi_info"
+                                            ],
+                                            "nodeid": 21
+                                        },
+                                        "lcard": 89193,
+                                        "rcard": 50792,
+                                        "nodeid": 20
+                                    },
+                                    "rchild": {
+                                        "ignore": false,
+                                        "name": "TableScan",
+                                        "lchild": null,
+                                        "rchild": null,
+                                        "lcard": 14835720,
+                                        "columns": [
+                                            "mi_info"
+                                        ],
+                                        "nodeid": 19
+                                    },
+                                    "lcard": 139985,
+                                    "rcard": 4049,
+                                    "nodeid": 18
+                                },
+                                "rchild": {
+                                    "ignore": false,
+                                    "name": "TableScan",
+                                    "lchild": null,
+                                    "rchild": null,
+                                    "lcard": 14835720,
+                                    "columns": [
+                                        "mi_info"
+                                    ],
+                                    "nodeid": 17
+                                },
+                                "lcard": 144034,
+                                "rcard": 9863,
+                                "nodeid": 16
+                            },
+                            "rchild": null,
+                            "lcard": 153897,
+                            "nodeid": 15
+                        },
+                        "lcard": 2528312,
+                        "rcard": 153897,
+                        "lcolumn": [
+                            "t_id"
+                        ],
+                        "rcolumn": [
+                            "mi_movie_id"
+                        ],
+                        "nodeid": 14
+                    },
+                    "rchild": null,
+                    "lcard": 102977,
+                    "columns": [
+                        "t_production_year"
+                    ],
+                    "nodeid": 13
+                },
+                "rchild": null,
+                "lcard": 28951,
+                "nodeid": 12
+            },
+            "rchild": {
+                "ignore": false,
+                "name": "JoinHash",
+                "lchild": {
+                    "ignore": false,
+                    "name": "Validate",
+                    "lchild": {
+                        "ignore": false,
+                        "name": "TableScan",
+                        "lchild": {
+                            "ignore": false,
+                            "name": "JoinHash",
+                            "lchild": {
+                                "ignore": false,
+                                "name": "GetTable",
+                                "lchild": null,
+                                "rchild": null,
+                                "nodeid": 11
+                            },
+                            "rchild": {
+                                "ignore": false,
+                                "name": "JoinHash",
+                                "lchild": {
+                                    "ignore": false,
+                                    "name": "Validate",
+                                    "lchild": {
+                                        "ignore": false,
+                                        "name": "JoinHash",
+                                        "lchild": {
+                                            "ignore": false,
+                                            "name": "GetTable",
+                                            "lchild": null,
+                                            "rchild": null,
+                                            "nodeid": 10
+                                        },
+                                        "rchild": null,
+                                        "lcard": 4523930,
+                                        "rcard": 153897,
+                                        "lcolumn": [
+                                            "mk_movie_id"
+                                        ],
+                                        "rcolumn": [
+                                            "mi_movie_id"
+                                        ],
+                                        "nodeid": 9
+                                    },
+                                    "rchild": null,
+                                    "lcard": 415025,
+                                    "nodeid": 8
+                                },
+                                "rchild": null,
+                                "lcard": 415025,
+                                "rcard": 153897,
+                                "lcolumn": [
+                                    "mk_movie_id"
+                                ],
+                                "rcolumn": [
+                                    "mi_movie_id"
+                                ],
+                                "nodeid": 7
+                            },
+                            "lcard": 134170,
+                            "rcard": 612026,
+                            "lcolumn": [
+                                "k_id"
+                            ],
+                            "rcolumn": [
+                                "mk_keyword_id"
+                            ],
+                            "nodeid": 6
+                        },
+                        "rchild": null,
+                        "lcard": 45001,
+                        "columns": [
+                            "k_keyword"
+                        ],
+                        "nodeid": 5
+                    },
+                    "rchild": null,
+                    "lcard": 21,
+                    "nodeid": 4
+                },
+                "rchild": null,
+                "lcard": 21,
+                "rcard": 612026,
+                "lcolumn": [
+                    "k_id"
+                ],
+                "rcolumn": [
+                    "mk_keyword_id"
+                ],
+                "nodeid": 3
+            },
+            "lcard": 28951,
+            "rcard": 1766,
+            "lcolumn": [
+                "t_id"
+            ],
+            "rcolumn": [
+                "mi_movie_id"
+            ],
+            "nodeid": 2
+        },
+        "rchild": null,
+        "lcard": 206,
+        "columns": [
+            "mk_movie_id",
+            "t_id"
+        ],
+        "nodeid": 1
+    },
+    "lcard": 206,
+    "grpby_nomod": [],
+    "grpby_mod": [],
+    "grpby_expr": [],
+    "aggr_nomod": [
+        "t_title"
+    ],
+    "aggr_mod": [],
+    "aggr_expr": [],
+    "nodeid": 0
+}

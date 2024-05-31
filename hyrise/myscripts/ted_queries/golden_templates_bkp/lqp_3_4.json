@@ -1,0 +1,176 @@
+{
+    "ignore": false,
+    "name": "Alias",
+    "lchild": {
+        "ignore": false,
+        "name": "Projection",
+        "lchild": {
+            "ignore": false,
+            "name": "Sort",
+            "lchild": {
+                "ignore": false,
+                "name": "AggregateHash",
+                "lchild": {
+                    "ignore": false,
+                    "name": "Projection",
+                    "lchild": {
+                        "ignore": false,
+                        "name": "JoinHash",
+                        "lchild": {
+                            "ignore": false,
+                            "name": "Validate",
+                            "lchild": {
+                                "ignore": false,
+                                "name": "TableScan",
+                                "lchild": {
+                                    "ignore": false,
+                                    "name": "TableScan",
+                                    "lchild": {
+                                        "ignore": false,
+                                        "name": "GetTable",
+                                        "lchild": null,
+                                        "rchild": null,
+                                        "nodeid": 16
+                                    },
+                                    "rchild": null,
+                                    "lcard": 6001215,
+                                    "columns": [
+                                        "l_comment"
+                                    ],
+                                    "nodeid": 15
+                                },
+                                "rchild": null,
+                                "lcard": 600121,
+                                "columns": [
+                                    "l_shipdate"
+                                ],
+                                "nodeid": 14
+                            },
+                            "rchild": null,
+                            "lcard": 322408,
+                            "nodeid": 13
+                        },
+                        "rchild": {
+                            "ignore": false,
+                            "name": "Validate",
+                            "lchild": {
+                                "ignore": false,
+                                "name": "TableScan",
+                                "lchild": {
+                                    "ignore": false,
+                                    "name": "JoinHash",
+                                    "lchild": {
+                                        "ignore": false,
+                                        "name": "GetTable",
+                                        "lchild": null,
+                                        "rchild": null,
+                                        "nodeid": 12
+                                    },
+                                    "rchild": {
+                                        "ignore": false,
+                                        "name": "Validate",
+                                        "lchild": {
+                                            "ignore": false,
+                                            "name": "TableScan",
+                                            "lchild": {
+                                                "ignore": false,
+                                                "name": "GetTable",
+                                                "lchild": null,
+                                                "rchild": null,
+                                                "nodeid": 11
+                                            },
+                                            "rchild": null,
+                                            "lcard": 150000,
+                                            "columns": [
+                                                "c_mktsegment"
+                                            ],
+                                            "nodeid": 10
+                                        },
+                                        "rchild": null,
+                                        "lcard": 30142,
+                                        "nodeid": 9
+                                    },
+                                    "lcard": 1500000,
+                                    "rcard": 30142,
+                                    "lcolumn": [
+                                        "o_custkey"
+                                    ],
+                                    "rcolumn": [
+                                        "c_custkey"
+                                    ],
+                                    "nodeid": 8
+                                },
+                                "rchild": null,
+                                "lcard": 451919,
+                                "columns": [
+                                    "o_orderdate"
+                                ],
+                                "nodeid": 7
+                            },
+                            "rchild": null,
+                            "lcard": 219297,
+                            "nodeid": 6
+                        },
+                        "lcard": 322408,
+                        "rcard": 219297,
+                        "lcolumn": [
+                            "l_orderkey"
+                        ],
+                        "rcolumn": [
+                            "o_orderkey"
+                        ],
+                        "nodeid": 5
+                    },
+                    "lcard": 219298,
+                    "forward": [
+                        "l_orderkey",
+                        "o_orderdate",
+                        "o_shippriority"
+                    ],
+                    "noforward": [
+                        "l_extendedprice",
+                        "l_discount"
+                    ],
+                    "nodeid": 4
+                },
+                "lcard": 219298,
+                "grpby_nomod": [
+                    "l_orderkey",
+                    "o_orderdate",
+                    "o_shippriority"
+                ],
+                "grpby_mod": [],
+                "grpby_expr": [],
+                "aggr_nomod": [],
+                "aggr_mod": [
+                    "l_extendedprice",
+                    "l_discount"
+                ],
+                "aggr_expr": [
+                    "SUM(l_extendedprice * (1 - l_discount))"
+                ],
+                "nodeid": 3
+            },
+            "lcard": 219298,
+            "col_mod": [
+                "l_extendedprice",
+                "l_discount"
+            ],
+            "col_nomod": [
+                "o_orderdate"
+            ],
+            "nodeid": 2
+        },
+        "lcard": 219298,
+        "forward": [
+            "l_orderkey",
+            "SUM(l_extendedprice * (1 - l_discount))",
+            "o_orderdate",
+            "o_shippriority"
+        ],
+        "noforward": [],
+        "nodeid": 1
+    },
+    "lcard": 219298,
+    "nodeid": 0
+}

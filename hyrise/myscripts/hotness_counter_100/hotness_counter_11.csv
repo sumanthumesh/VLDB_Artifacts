@@ -1,0 +1,8 @@
+ps_partkey,6220443
+ps_suppkey,80000000
+ps_availqty,6407200
+ps_supplycost,6407200
+s_suppkey,40045
+s_nationkey,1000000
+n_nationkey,1
+n_name,25

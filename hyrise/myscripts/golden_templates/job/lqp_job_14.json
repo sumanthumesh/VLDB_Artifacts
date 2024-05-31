@@ -1,0 +1,223 @@
+{
+    "ignore": false,
+    "name": "Projection",
+    "lchild": {
+        "ignore": false,
+        "name": "AggregateHash",
+        "lchild": {
+            "ignore": false,
+            "name": "JoinHash",
+            "lchild": {
+                "ignore": false,
+                "name": "Validate",
+                "lchild": {
+                    "ignore": false,
+                    "name": "TableScan",
+                    "lchild": {
+                        "ignore": false,
+                        "name": "GetTable",
+                        "lchild": null,
+                        "rchild": null,
+                        "nodeid": 21
+                    },
+                    "rchild": null,
+                    "lcard": 2528312,
+                    "columns": [
+                        "t_production_year"
+                    ],
+                    "nodeid": 20
+                },
+                "rchild": null,
+                "lcard": 2203697,
+                "nodeid": 19
+            },
+            "rchild": {
+                "ignore": false,
+                "name": "JoinHash",
+                "lchild": {
+                    "ignore": false,
+                    "name": "Validate",
+                    "lchild": {
+                        "ignore": false,
+                        "name": "TableScan",
+                        "lchild": {
+                            "ignore": false,
+                            "name": "JoinHash",
+                            "lchild": {
+                                "ignore": false,
+                                "name": "GetTable",
+                                "lchild": null,
+                                "rchild": null,
+                                "nodeid": 18
+                            },
+                            "rchild": {
+                                "ignore": false,
+                                "name": "JoinHash",
+                                "lchild": {
+                                    "ignore": false,
+                                    "name": "Validate",
+                                    "lchild": {
+                                        "ignore": false,
+                                        "name": "JoinHash",
+                                        "lchild": {
+                                            "ignore": false,
+                                            "name": "GetTable",
+                                            "lchild": null,
+                                            "rchild": null,
+                                            "nodeid": 17
+                                        },
+                                        "rchild": {
+                                            "ignore": false,
+                                            "name": "JoinHash",
+                                            "lchild": {
+                                                "ignore": false,
+                                                "name": "Validate",
+                                                "lchild": {
+                                                    "ignore": false,
+                                                    "name": "JoinHash",
+                                                    "lchild": {
+                                                        "ignore": false,
+                                                        "name": "GetTable",
+                                                        "lchild": null,
+                                                        "rchild": null,
+                                                        "nodeid": 16
+                                                    },
+                                                    "rchild": {
+                                                        "ignore": false,
+                                                        "name": "Validate",
+                                                        "lchild": {
+                                                            "ignore": false,
+                                                            "name": "TableScan",
+                                                            "lchild": {
+                                                                "ignore": false,
+                                                                "name": "GetTable",
+                                                                "lchild": null,
+                                                                "rchild": null,
+                                                                "nodeid": 15
+                                                            },
+                                                            "rchild": null,
+                                                            "lcard": 2963664,
+                                                            "columns": [
+                                                                "pi_info"
+                                                            ],
+                                                            "nodeid": 14
+                                                        },
+                                                        "rchild": null,
+                                                        "lcard": 296366,
+                                                        "nodeid": 13
+                                                    },
+                                                    "lcard": 36244344,
+                                                    "rcard": 296366,
+                                                    "lcolumn": [
+                                                        "ci_person_id"
+                                                    ],
+                                                    "rcolumn": [
+                                                        "pi_person_id"
+                                                    ],
+                                                    "nodeid": 12
+                                                },
+                                                "rchild": null,
+                                                "lcard": 2754496,
+                                                "nodeid": 11
+                                            },
+                                            "rchild": null,
+                                            "lcard": 2754496,
+                                            "rcard": 296366,
+                                            "lcolumn": [
+                                                "ci_person_id"
+                                            ],
+                                            "rcolumn": [
+                                                "pi_person_id"
+                                            ],
+                                            "nodeid": 10
+                                        },
+                                        "lcard": 3140339,
+                                        "rcard": 2754496,
+                                        "lcolumn": [
+                                            "cn_id"
+                                        ],
+                                        "rcolumn": [
+                                            "ci_id"
+                                        ],
+                                        "nodeid": 9
+                                    },
+                                    "rchild": null,
+                                    "lcard": 238659,
+                                    "nodeid": 8
+                                },
+                                "rchild": null,
+                                "lcard": 238659,
+                                "rcard": 2754496,
+                                "lcolumn": [
+                                    "cn_id"
+                                ],
+                                "rcolumn": [
+                                    "ci_id"
+                                ],
+                                "nodeid": 7
+                            },
+                            "lcard": 14835720,
+                            "rcard": 238659,
+                            "lcolumn": [
+                                "mi_id"
+                            ],
+                            "rcolumn": [
+                                "ci_id"
+                            ],
+                            "nodeid": 6
+                        },
+                        "rchild": null,
+                        "lcard": 238659,
+                        "columns": [
+                            "mi_note"
+                        ],
+                        "nodeid": 5
+                    },
+                    "rchild": null,
+                    "lcard": 214793,
+                    "nodeid": 4
+                },
+                "rchild": null,
+                "lcard": 214793,
+                "rcard": 238659,
+                "lcolumn": [
+                    "mi_id"
+                ],
+                "rcolumn": [
+                    "ci_id"
+                ],
+                "nodeid": 3
+            },
+            "lcard": 2203697,
+            "rcard": 214793,
+            "lcolumn": [
+                "t_imdb_index"
+            ],
+            "rcolumn": [
+                "cn_imdb_index"
+            ],
+            "nodeid": 2
+        },
+        "lcard": 473339625472,
+        "grpby_nomod": [
+            "t_production_year"
+        ],
+        "grpby_mod": [],
+        "grpby_expr": [],
+        "aggr_nomod": [
+            "ci_role_id",
+            "ci_nr_order"
+        ],
+        "aggr_mod": [],
+        "aggr_expr": [],
+        "nodeid": 1
+    },
+    "lcard": 0,
+    "forward": [
+        "MAX(ci_role_id)",
+        "AVG(ci_nr_order)",
+        "t_production_year"
+    ],
+    "noforward": [],
+    "nodeid": 0
+}

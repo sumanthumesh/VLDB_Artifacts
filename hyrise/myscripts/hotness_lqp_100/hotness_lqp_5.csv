@@ -1,0 +1,16 @@
+o_orderdate,150000000
+l_orderkey,617997822
+o_orderkey,44896992
+r_name,5
+n_regionkey,25
+r_regionkey,1
+s_nationkey,19159928
+n_nationkey,10
+l_suppkey,107759622
+s_suppkey,400000
+o_custkey,22448498
+c_custkey,15000000
+c_nationkey,17959928
+l_extendedprice,17928916
+l_discount,17928916
+n_name,35857832

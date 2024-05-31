@@ -1,0 +1,96 @@
+{
+    "ignore": false,
+    "name": "Alias",
+    "lchild": {
+        "ignore": false,
+        "name": "Sort",
+        "lchild": {
+            "ignore": false,
+            "name": "Projection",
+            "lchild": {
+                "ignore": false,
+                "name": "AggregateHash",
+                "lchild": {
+                    "ignore": false,
+                    "name": "Projection",
+                    "lchild": {
+                        "ignore": false,
+                        "name": "Validate",
+                        "lchild": {
+                            "ignore": false,
+                            "name": "TableScan",
+                            "lchild": {
+                                "ignore": false,
+                                "name": "GetTable",
+                                "lchild": null,
+                                "rchild": null,
+                                "nodeid": 7
+                            },
+                            "rchild": null,
+                            "lcard": 600037888,
+                            "columns": [
+                                "l_shipdate"
+                            ],
+                            "nodeid": 6
+                        },
+                        "rchild": null,
+                        "lcard": 594165952,
+                        "nodeid": 5
+                    },
+                    "lcard": 594165952,
+                    "forward": [
+                        "l_quantity",
+                        "l_returnflag",
+                        "l_linestatus"
+                    ],
+                    "noforward": [
+                        "l_extendedprice",
+                        "l_discount",
+                        "l_tax"
+                    ],
+                    "nodeid": 4
+                },
+                "lcard": 594165952,
+                "grpby_nomod": [
+                    "l_returnflag",
+                    "l_linestatus"
+                ],
+                "grpby_mod": [],
+                "grpby_expr": [],
+                "aggr_nomod": [
+                    "l_quantity"
+                ],
+                "aggr_mod": [
+                    "l_extendedprice",
+                    "l_discount",
+                    "l_tax"
+                ],
+                "aggr_expr": [
+                    "  SUM(l_extendedprice * (1 - l_discount))",
+                    "  SUM((l_extendedprice * (1 - l_discount)) * (1 + l_tax))",
+                    "  COUNT(*)"
+                ],
+                "nodeid": 3
+            },
+            "lcard": 594165952,
+            "forward": [
+                "l_returnflag",
+                "l_linestatus",
+                "SUM(l_quantity)",
+                "SUM(l_extendedprice)",
+                "SUM(l_extendedprice * (1 - l_discount))",
+                "SUM((l_extendedprice * (1 - l_discount)) * (1 + l_tax))",
+                "AVG(l_discount)",
+                "COUNT(*)"
+            ],
+            "noforward": [],
+            "nodeid": 2
+        },
+        "lcard": 594165952,
+        "col_mod": [],
+        "col_nomod": [],
+        "nodeid": 1
+    },
+    "lcard": 594165952,
+    "nodeid": 0
+}

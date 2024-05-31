@@ -1,0 +1,205 @@
+{
+    "ignore": false,
+    "name": "Alias",
+    "lchild": {
+        "ignore": false,
+        "name": "Projection",
+        "lchild": {
+            "ignore": false,
+            "name": "Sort",
+            "lchild": {
+                "ignore": false,
+                "name": "AggregateHash",
+                "lchild": {
+                    "ignore": false,
+                    "name": "Projection",
+                    "lchild": {
+                        "ignore": false,
+                        "name": "JoinHash",
+                        "lchild": {
+                            "ignore": false,
+                            "name": "Validate",
+                            "lchild": {
+                                "ignore": false,
+                                "name": "TableScan",
+                                "lchild": {
+                                    "ignore": false,
+                                    "name": "JoinHash",
+                                    "lchild": {
+                                        "ignore": false,
+                                        "name": "GetTable",
+                                        "lchild": null,
+                                        "rchild": null,
+                                        "nodeid": 19
+                                    },
+                                    "rchild": {
+                                        "ignore": false,
+                                        "name": "JoinHash",
+                                        "lchild": {
+                                            "ignore": false,
+                                            "name": "Validate",
+                                            "lchild": {
+                                                "ignore": false,
+                                                "name": "TableScan",
+                                                "lchild": {
+                                                    "ignore": false,
+                                                    "name": "GetTable",
+                                                    "lchild": null,
+                                                    "rchild": null,
+                                                    "nodeid": 18
+                                                },
+                                                "rchild": null,
+                                                "lcard": 1500000,
+                                                "columns": [
+                                                    "o_orderdate"
+                                                ],
+                                                "nodeid": 17
+                                            },
+                                            "rchild": null,
+                                            "lcard": 727305,
+                                            "nodeid": 16
+                                        },
+                                        "rchild": {
+                                            "ignore": false,
+                                            "name": "JoinHash",
+                                            "lchild": {
+                                                "ignore": false,
+                                                "name": "Validate",
+                                                "lchild": {
+                                                    "ignore": false,
+                                                    "name": "TableScan",
+                                                    "lchild": {
+                                                        "ignore": false,
+                                                        "name": "GetTable",
+                                                        "lchild": null,
+                                                        "rchild": null,
+                                                        "nodeid": 15
+                                                    },
+                                                    "rchild": null,
+                                                    "lcard": 150000,
+                                                    "columns": [
+                                                        "c_mktsegment"
+                                                    ],
+                                                    "nodeid": 14
+                                                },
+                                                "rchild": null,
+                                                "lcard": 30142,
+                                                "nodeid": 13
+                                            },
+                                            "rchild": {
+                                                "ignore": false,
+                                                "name": "Validate",
+                                                "lchild": {
+                                                    "ignore": false,
+                                                    "name": "GetTable",
+                                                    "lchild": null,
+                                                    "rchild": null,
+                                                    "nodeid": 12
+                                                },
+                                                "rchild": null,
+                                                "lcard": 25,
+                                                "nodeid": 11
+                                            },
+                                            "lcard": 30142,
+                                            "rcard": 25,
+                                            "lcolumn": [
+                                                "c_nationkey"
+                                            ],
+                                            "rcolumn": [
+                                                "n_nationkey"
+                                            ],
+                                            "nodeid": 10
+                                        },
+                                        "lcard": 727305,
+                                        "rcard": 30142,
+                                        "lcolumn": [
+                                            "o_custkey"
+                                        ],
+                                        "rcolumn": [
+                                            "c_custkey"
+                                        ],
+                                        "nodeid": 9
+                                    },
+                                    "lcard": 6001215,
+                                    "rcard": 147126,
+                                    "lcolumn": [
+                                        "l_orderkey"
+                                    ],
+                                    "rcolumn": [
+                                        "o_orderkey"
+                                    ],
+                                    "nodeid": 8
+                                },
+                                "rchild": null,
+                                "lcard": 588507,
+                                "columns": [
+                                    "l_shipdate"
+                                ],
+                                "nodeid": 7
+                            },
+                            "rchild": null,
+                            "lcard": 30519,
+                            "nodeid": 6
+                        },
+                        "rchild": null,
+                        "lcard": 30519,
+                        "rcard": 147126,
+                        "lcolumn": [
+                            "l_orderkey"
+                        ],
+                        "rcolumn": [
+                            "o_orderkey"
+                        ],
+                        "nodeid": 5
+                    },
+                    "lcard": 30519,
+                    "forward": [
+                        "l_orderkey",
+                        "o_orderdate",
+                        "o_shippriority"
+                    ],
+                    "noforward": [
+                        "l_extendedprice",
+                        "l_discount"
+                    ],
+                    "nodeid": 4
+                },
+                "lcard": 30519,
+                "grpby_nomod": [
+                    "l_orderkey",
+                    "o_orderdate",
+                    "o_shippriority"
+                ],
+                "grpby_mod": [],
+                "grpby_expr": [],
+                "aggr_nomod": [],
+                "aggr_mod": [
+                    "l_extendedprice",
+                    "l_discount"
+                ],
+                "aggr_expr": [
+                    "SUM(l_extendedprice * (1 - l_discount))"
+                ],
+                "nodeid": 3
+            },
+            "lcard": 11620,
+            "col_mod": [
+                "l_extendedprice",
+                "l_discount"
+            ],
+            "col_nomod": [],
+            "nodeid": 2
+        },
+        "lcard": 11620,
+        "forward": [
+            "l_orderkey",
+            "SUM(l_extendedprice * (1 - l_discount))",
+            "o_orderdate",
+            "o_shippriority"
+        ],
+        "noforward": [],
+        "nodeid": 1
+    },
+    "lcard": 11620,
+    "nodeid": 0
+}

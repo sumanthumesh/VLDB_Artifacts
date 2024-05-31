@@ -1,0 +1,143 @@
+{
+    "ignore": false,
+    "name": "AggregateHash",
+    "lchild": {
+        "ignore": false,
+        "name": "JoinHash",
+        "lchild": {
+            "ignore": false,
+            "name": "Validate",
+            "lchild": {
+                "ignore": false,
+                "name": "GetTable",
+                "lchild": null,
+                "rchild": null,
+                "nodeid": 14
+            },
+            "rchild": null,
+            "lcard": 2963664,
+            "nodeid": 13
+        },
+        "rchild": {
+            "ignore": false,
+            "name": "JoinHash",
+            "lchild": {
+                "ignore": false,
+                "name": "Validate",
+                "lchild": {
+                    "ignore": false,
+                    "name": "TableScan",
+                    "lchild": {
+                        "ignore": false,
+                        "name": "GetTable",
+                        "lchild": null,
+                        "rchild": null,
+                        "nodeid": 12
+                    },
+                    "rchild": null,
+                    "lcard": 14835720,
+                    "columns": [
+                        "mi_note"
+                    ],
+                    "nodeid": 11
+                },
+                "rchild": null,
+                "lcard": 14438,
+                "nodeid": 10
+            },
+            "rchild": {
+                "ignore": false,
+                "name": "JoinHash",
+                "lchild": {
+                    "ignore": false,
+                    "name": "Validate",
+                    "lchild": {
+                        "ignore": false,
+                        "name": "JoinHash",
+                        "lchild": {
+                            "ignore": false,
+                            "name": "GetTable",
+                            "lchild": null,
+                            "rchild": null,
+                            "nodeid": 9
+                        },
+                        "rchild": {
+                            "ignore": false,
+                            "name": "Validate",
+                            "lchild": {
+                                "ignore": false,
+                                "name": "TableScan",
+                                "lchild": {
+                                    "ignore": false,
+                                    "name": "GetTable",
+                                    "lchild": null,
+                                    "rchild": null,
+                                    "nodeid": 8
+                                },
+                                "rchild": null,
+                                "lcard": 36244344,
+                                "columns": [
+                                    "ci_note"
+                                ],
+                                "nodeid": 7
+                            },
+                            "rchild": null,
+                            "lcard": 264764,
+                            "nodeid": 6
+                        },
+                        "lcard": 4167491,
+                        "rcard": 264764,
+                        "lcolumn": [
+                            "n_id"
+                        ],
+                        "rcolumn": [
+                            "ci_id"
+                        ],
+                        "nodeid": 5
+                    },
+                    "rchild": null,
+                    "lcard": 58515,
+                    "nodeid": 4
+                },
+                "rchild": null,
+                "lcard": 58515,
+                "rcard": 264764,
+                "lcolumn": [
+                    "n_id"
+                ],
+                "rcolumn": [
+                    "ci_id"
+                ],
+                "nodeid": 3
+            },
+            "lcard": 14438,
+            "rcard": 58515,
+            "lcolumn": [
+                "mi_movie_id"
+            ],
+            "rcolumn": [
+                "ci_movie_id"
+            ],
+            "nodeid": 2
+        },
+        "lcard": 2963664,
+        "rcard": 455,
+        "lcolumn": [
+            "pi_person_id"
+        ],
+        "rcolumn": [
+            "ci_person_id"
+        ],
+        "nodeid": 1
+    },
+    "lcard": 27957,
+    "grpby_nomod": [],
+    "grpby_mod": [],
+    "grpby_expr": [],
+    "aggr_nomod": [
+        "n_name"
+    ],
+    "aggr_mod": [],
+    "aggr_expr": [],
+    "nodeid": 0
+}

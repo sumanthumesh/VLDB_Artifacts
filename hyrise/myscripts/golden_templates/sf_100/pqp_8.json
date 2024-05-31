@@ -1,0 +1,316 @@
+{
+    "ignore": false,
+    "name": "Alias",
+    "lchild": {
+        "ignore": false,
+        "name": "Projection",
+        "lchild": {
+            "ignore": false,
+            "name": "Sort",
+            "lchild": {
+                "ignore": false,
+                "name": "AggregateHash",
+                "lchild": {
+                    "ignore": false,
+                    "name": "Projection",
+                    "lchild": {
+                        "ignore": false,
+                        "name": "Alias",
+                        "lchild": {
+                            "ignore": false,
+                            "name": "Projection",
+                            "lchild": {
+                                "ignore": false,
+                                "name": "JoinHash",
+                                "lchild": {
+                                    "ignore": false,
+                                    "name": "JoinHash",
+                                    "lchild": {
+                                        "ignore": false,
+                                        "name": "Validate",
+                                        "lchild": {
+                                            "ignore": false,
+                                            "name": "GetTable",
+                                            "lchild": null,
+                                            "rchild": null,
+                                            "nodeid": 32
+                                        },
+                                        "rchild": null,
+                                        "lcard": 1000000,
+                                        "nodeid": 31
+                                    },
+                                    "rchild": {
+                                        "ignore": false,
+                                        "name": "JoinHash",
+                                        "lchild": {
+                                            "ignore": false,
+                                            "name": "Validate",
+                                            "lchild": {
+                                                "ignore": false,
+                                                "name": "JoinHash",
+                                                "lchild": {
+                                                    "ignore": false,
+                                                    "name": "GetTable",
+                                                    "lchild": null,
+                                                    "rchild": null,
+                                                    "nodeid": 30
+                                                },
+                                                "rchild": {
+                                                    "ignore": false,
+                                                    "name": "Validate",
+                                                    "lchild": {
+                                                        "ignore": false,
+                                                        "name": "JoinHash",
+                                                        "lchild": {
+                                                            "ignore": false,
+                                                            "name": "GetTable",
+                                                            "lchild": null,
+                                                            "rchild": null,
+                                                            "nodeid": 29
+                                                        },
+                                                        "rchild": {
+                                                            "ignore": false,
+                                                            "name": "Validate",
+                                                            "lchild": {
+                                                                "ignore": false,
+                                                                "name": "TableScan",
+                                                                "lchild": {
+                                                                    "ignore": false,
+                                                                    "name": "GetTable",
+                                                                    "lchild": null,
+                                                                    "rchild": null,
+                                                                    "nodeid": 28
+                                                                },
+                                                                "rchild": null,
+                                                                "lcard": 5,
+                                                                "columns": [
+                                                                    "r_name"
+                                                                ],
+                                                                "nodeid": 27
+                                                            },
+                                                            "rchild": null,
+                                                            "lcard": 1,
+                                                            "nodeid": 26
+                                                        },
+                                                        "lcard": 25,
+                                                        "rcard": 1,
+                                                        "lcolumn": [
+                                                            "n_regionkey"
+                                                        ],
+                                                        "rcolumn": [
+                                                            "r_regionkey"
+                                                        ],
+                                                        "nodeid": 25
+                                                    },
+                                                    "rchild": null,
+                                                    "lcard": 5,
+                                                    "nodeid": 24
+                                                },
+                                                "lcard": 15000000,
+                                                "rcard": 5,
+                                                "lcolumn": [
+                                                    "c_nationkey"
+                                                ],
+                                                "rcolumn": [
+                                                    "n_nationkey"
+                                                ],
+                                                "nodeid": 23
+                                            },
+                                            "rchild": null,
+                                            "lcard": 3001905,
+                                            "nodeid": 22
+                                        },
+                                        "rchild": {
+                                            "ignore": false,
+                                            "name": "JoinHash",
+                                            "lchild": {
+                                                "ignore": false,
+                                                "name": "Validate",
+                                                "lchild": {
+                                                    "ignore": false,
+                                                    "name": "TableScan",
+                                                    "lchild": {
+                                                        "ignore": false,
+                                                        "name": "JoinHash",
+                                                        "lchild": {
+                                                            "ignore": false,
+                                                            "name": "GetTable",
+                                                            "lchild": null,
+                                                            "rchild": null,
+                                                            "nodeid": 21
+                                                        },
+                                                        "rchild": {
+                                                            "ignore": false,
+                                                            "name": "Validate",
+                                                            "lchild": {
+                                                                "ignore": false,
+                                                                "name": "JoinHash",
+                                                                "lchild": {
+                                                                    "ignore": false,
+                                                                    "name": "GetTable",
+                                                                    "lchild": null,
+                                                                    "rchild": null,
+                                                                    "nodeid": 20
+                                                                },
+                                                                "rchild": {
+                                                                    "ignore": false,
+                                                                    "name": "Validate",
+                                                                    "lchild": {
+                                                                        "ignore": false,
+                                                                        "name": "TableScan",
+                                                                        "lchild": {
+                                                                            "ignore": false,
+                                                                            "name": "GetTable",
+                                                                            "lchild": null,
+                                                                            "rchild": null,
+                                                                            "nodeid": 19
+                                                                        },
+                                                                        "rchild": null,
+                                                                        "lcard": 20000000,
+                                                                        "columns": [
+                                                                            "p_type"
+                                                                        ],
+                                                                        "nodeid": 18
+                                                                    },
+                                                                    "rchild": null,
+                                                                    "lcard": 134258,
+                                                                    "nodeid": 17
+                                                                },
+                                                                "lcard": 600037902,
+                                                                "rcard": 134258,
+                                                                "lcolumn": [
+                                                                    "l_partkey"
+                                                                ],
+                                                                "rcolumn": [
+                                                                    "p_partkey"
+                                                                ],
+                                                                "nodeid": 16
+                                                            },
+                                                            "rchild": null,
+                                                            "lcard": 4025859,
+                                                            "nodeid": 15
+                                                        },
+                                                        "lcard": 150000000,
+                                                        "rcard": 4025859,
+                                                        "lcolumn": [
+                                                            "o_orderkey"
+                                                        ],
+                                                        "rcolumn": [
+                                                            "l_orderkey"
+                                                        ],
+                                                        "nodeid": 14
+                                                    },
+                                                    "rchild": null,
+                                                    "lcard": 3972176,
+                                                    "columns": [
+                                                        "o_orderdate"
+                                                    ],
+                                                    "nodeid": 13
+                                                },
+                                                "rchild": null,
+                                                "lcard": 1205822,
+                                                "nodeid": 12
+                                            },
+                                            "rchild": null,
+                                            "lcard": 1205822,
+                                            "rcard": 4025859,
+                                            "lcolumn": [
+                                                "o_orderkey"
+                                            ],
+                                            "rcolumn": [
+                                                "l_orderkey"
+                                            ],
+                                            "nodeid": 11
+                                        },
+                                        "lcard": 3001905,
+                                        "rcard": 1222092,
+                                        "lcolumn": [
+                                            "c_custkey"
+                                        ],
+                                        "rcolumn": [
+                                            "o_custkey"
+                                        ],
+                                        "nodeid": 10
+                                    },
+                                    "lcard": 1000000,
+                                    "rcard": 244821,
+                                    "lcolumn": [
+                                        "s_suppkey"
+                                    ],
+                                    "rcolumn": [
+                                        "l_suppkey"
+                                    ],
+                                    "nodeid": 9
+                                },
+                                "rchild": {
+                                    "ignore": false,
+                                    "name": "Validate",
+                                    "lchild": null,
+                                    "rchild": null,
+                                    "lcard": 25,
+                                    "nodeid": 8
+                                },
+                                "lcard": 244821,
+                                "rcard": 25,
+                                "lcolumn": [
+                                    "s_nationkey"
+                                ],
+                                "rcolumn": [
+                                    "n_nationkey"
+                                ],
+                                "nodeid": 7
+                            },
+                            "lcard": 244821,
+                            "forward": [
+                                "n_name"
+                            ],
+                            "noforward": [
+                                "o_orderdate",
+                                "l_extendedprice",
+                                "l_discount"
+                            ],
+                            "nodeid": 6
+                        },
+                        "lcard": 244821,
+                        "nodeid": 5
+                    },
+                    "lcard": 244821,
+                    "forward": [
+                        "EXTRACT(YEAR FROM o_orderdate)"
+                    ],
+                    "noforward": [
+                        "n_name"
+                    ],
+                    "nodeid": 4
+                },
+                "lcard": 244821,
+                "grpby_nomod": [],
+                "grpby_mod": [],
+                "grpby_expr": [],
+                "aggr_nomod": [],
+                "aggr_mod": [
+                    "l_extendedprice",
+                    "l_discount",
+                    "n_name"
+                ],
+                "aggr_expr": [
+                    "SUM(CASE WHEN n_name = 'BRAZIL' THEN l_extendedprice * (1 - l_discount) ELSE 0 END)",
+                    "  SUM(l_extendedprice * (1 - l_discount))"
+                ],
+                "nodeid": 3
+            },
+            "lcard": 2,
+            "col_mod": [],
+            "col_nomod": [],
+            "nodeid": 2
+        },
+        "lcard": 2,
+        "forward": [
+            "EXTRACT(YEAR FROM o_orderdate)"
+        ],
+        "noforward": [],
+        "nodeid": 1
+    },
+    "lcard": 2,
+    "nodeid": 0
+}

@@ -1,0 +1,13 @@
+l_partkey,600037888
+ps_partkey,80000000
+l_suppkey,0
+ps_suppkey,0
+l_shipdate,0
+l_quantity,0
+p_name,20000000
+p_partkey,0
+s_suppkey,1000000
+n_nationkey,26
+s_nationkey,0
+n_name,0
+s_name,0

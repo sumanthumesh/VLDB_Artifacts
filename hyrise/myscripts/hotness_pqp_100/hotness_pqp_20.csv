@@ -1,0 +1,14 @@
+l_partkey,601621015
+ps_partkey,81737776
+l_suppkey,8101534
+ps_suppkey,2329783
+l_shipdate,6518421
+l_quantity,989835
+p_name,20000000
+p_partkey,217222
+ps_availqty,868888
+s_suppkey,1000000
+n_nationkey,26
+s_nationkey,895016
+n_name,25
+s_name,17971

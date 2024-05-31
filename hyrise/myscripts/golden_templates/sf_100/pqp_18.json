@@ -1,0 +1,159 @@
+{
+    "ignore": false,
+    "name": "Projection",
+    "lchild": {
+        "ignore": false,
+        "name": "Sort",
+        "lchild": {
+            "ignore": false,
+            "name": "AggregateHash",
+            "lchild": {
+                "ignore": false,
+                "name": "JoinHash",
+                "lchild": {
+                    "ignore": false,
+                    "name": "Validate",
+                    "lchild": {
+                        "ignore": false,
+                        "name": "GetTable",
+                        "lchild": null,
+                        "rchild": null,
+                        "nodeid": 14
+                    },
+                    "rchild": null,
+                    "lcard": 600037902,
+                    "nodeid": 13
+                },
+                "rchild": {
+                    "ignore": false,
+                    "name": "JoinHash",
+                    "lchild": {
+                        "ignore": false,
+                        "name": "JoinHash",
+                        "lchild": {
+                            "ignore": false,
+                            "name": "Validate",
+                            "lchild": {
+                                "ignore": false,
+                                "name": "GetTable",
+                                "lchild": null,
+                                "rchild": null,
+                                "nodeid": 12
+                            },
+                            "rchild": null,
+                            "lcard": 150000000,
+                            "nodeid": 11
+                        },
+                        "rchild": {
+                            "ignore": false,
+                            "name": "Projection",
+                            "lchild": {
+                                "ignore": false,
+                                "name": "TableScan",
+                                "lchild": {
+                                    "ignore": false,
+                                    "name": "AggregateHash",
+                                    "lchild": null,
+                                    "lcard": 600037902,
+                                    "grpby_nomod": [
+                                        "l_orderkey"
+                                    ],
+                                    "grpby_mod": [],
+                                    "grpby_expr": [],
+                                    "aggr_nomod": [
+                                        "l_quantity"
+                                    ],
+                                    "aggr_mod": [],
+                                    "aggr_expr": [],
+                                    "nodeid": 10
+                                },
+                                "rchild": null,
+                                "lcard": 150000000,
+                                "columns": [],
+                                "nodeid": 9
+                            },
+                            "lcard": 6398,
+                            "forward": [
+                                "l_orderkey"
+                            ],
+                            "noforward": [],
+                            "nodeid": 8
+                        },
+                        "lcard": 150000000,
+                        "rcard": 6398,
+                        "lcolumn": [
+                            "o_orderkey"
+                        ],
+                        "rcolumn": [],
+                        "nodeid": 7
+                    },
+                    "rchild": {
+                        "ignore": false,
+                        "name": "Validate",
+                        "lchild": {
+                            "ignore": false,
+                            "name": "GetTable",
+                            "lchild": null,
+                            "rchild": null,
+                            "nodeid": 6
+                        },
+                        "rchild": null,
+                        "lcard": 15000000,
+                        "nodeid": 5
+                    },
+                    "lcard": 6398,
+                    "rcard": 15000000,
+                    "lcolumn": [
+                        "o_custkey"
+                    ],
+                    "rcolumn": [
+                        "c_custkey"
+                    ],
+                    "nodeid": 4
+                },
+                "lcard": 600037902,
+                "rcard": 6398,
+                "lcolumn": [
+                    "l_orderkey"
+                ],
+                "rcolumn": [
+                    "o_orderkey"
+                ],
+                "nodeid": 3
+            },
+            "lcard": 44786,
+            "grpby_nomod": [
+                "c_custkey",
+                "o_orderkey"
+            ],
+            "grpby_mod": [],
+            "grpby_expr": [],
+            "aggr_nomod": [
+                "l_quantity"
+            ],
+            "aggr_onlyout": [
+                "c_name",
+                "o_orderdate",
+                "o_totalprice"
+            ],
+            "aggr_mod": [],
+            "aggr_expr": [],
+            "nodeid": 2
+        },
+        "lcard": 6398,
+        "col_mod": [],
+        "col_nomod": [],
+        "nodeid": 1
+    },
+    "lcard": 6398,
+    "forward": [
+        "c_name",
+        "c_custkey",
+        "o_orderkey",
+        "o_orderdate",
+        "o_totalprice",
+        "SUM(l_quantity)"
+    ],
+    "noforward": [],
+    "nodeid": 0
+}

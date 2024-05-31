@@ -1,0 +1,1 @@
+select count(*) from lineitem where l_comment like '%of%'

@@ -1,0 +1,17 @@
+p_name,20000000
+l_partkey,665310996
+p_partkey,1087982
+ps_partkey,84351928
+s_nationkey,1000000
+n_nationkey,25
+o_orderkey,150000000
+l_orderkey,32636547
+l_suppkey,163182735
+s_suppkey,1000000
+ps_suppkey,130546188
+o_orderdate,32636547
+l_quantity,32636547
+l_extendedprice,32636547
+l_discount,32636547
+ps_supplycost,32636547
+n_name,32636722
