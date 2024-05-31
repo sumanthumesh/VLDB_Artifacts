@@ -14,4 +14,7 @@ Contains the code for the hyrise database modified to generate traces
 4. Queries/:  
 All of the benchmark queries we have used
 
+5. Snipersim/:
+Contains the code for the config needed to run snipersim
+
 Each directory has the required information to compile code contained within.
